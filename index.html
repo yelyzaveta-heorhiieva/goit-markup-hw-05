@@ -505,62 +505,68 @@
     <!-- #region modal-overflay -->
     <div class="modal-overflay is-open">
       <div class="overflay">
+        <button class="close-button" type="button">
+          <svg class="close-mark" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-mark"></use>
+          </svg>
+        </button>
+        <p class="overflay-title">
+          Leave your contacts and we will call you back
+        </p>
         <form
           class="form"
           name="issue_report_form"
           autocomplete="off"
           novalidate
         >
-          <button class="close-button" type="button">
-            <svg class="close-mark" width="8" height="8">
-              <use href="./images/icons.svg#icon-close-mark"></use>
-            </svg>
-          </button>
-          <fieldset class="form-group">
-            <legend class="group-title">
-              Leave your contacts and we will call you back
-            </legend>
-            <div class="form-field">
-              <label class="form-label">
-                Name
-                <input class="input" type="text" name="user_name" />
-                <div class="overlay-icon-container">
-                  <svg class="overlay-icon" width="12" height="12">
-                    <use href="./images/icons.svg#icon-user"></use>
-                  </svg>
-                </div>
-              </label>
+          <div class="form-field">
+            <label class="form-label">
+              Name
+              <input class="input" type="text" name="user_name" />
+              <div class="overlay-icon-container">
+                <svg class="overlay-icon" width="12" height="12">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
 
-              <label class="form-label">
-                Phone
-                <input class="input" type="tel" name="user_phone" />
-                <div class="overlay-icon-container">
-                  <svg class="overlay-icon" width="13" height="13">
-                    <use href="./images/icons.svg#icon-tel"></use>
-                  </svg>
-                </div>
-              </label>
+          <div class="form-field">
+            <label class="form-label">
+              Phone
+              <input class="input" type="tel" name="user_phone" />
+              <div class="overlay-icon-container">
+                <svg class="overlay-icon" width="13" height="13">
+                  <use href="./images/icons.svg#icon-tel"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
 
-              <label class="form-label">
-                Email
-                <input class="input" type="email" name="user_email" />
-                <div class="overlay-icon-container">
-                  <svg class="overlay-icon" width="15" height="12">
-                    <use href="./images/icons.svg#icon-mail"></use>
-                  </svg>
-                </div>
-              </label>
+          <div class="form-field">
+            <label class="form-label">
+              Email
+              <input class="input" type="email" name="user_email" />
+              <div class="overlay-icon-container">
+                <svg class="overlay-icon" width="15" height="12">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
 
-              <label class="form-label">
-                Comment
-                <textarea
-                  class="comment"
-                  name="comment"
-                  placeholder="Text input"
-                ></textarea>
-              </label>
-            </div>
+          <div class="form-field">
+            <label class="form-label">
+              Comment
+              <textarea
+                class="comment"
+                name="comment"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+          </div>
 
+          <div class="form-field">
             <label class="form-label accept">
               <input
                 class="checkbox"
@@ -577,7 +583,8 @@
                 </svg>
               </div>
             </label>
-          </fieldset>
+          </div>
+
           <button class="overflay-button" type="submit">Send</button>
         </form>
       </div>
